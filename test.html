@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms & Policies - FastTrack Courier</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .terms-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .terms-card {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .terms-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .terms-card i {
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+
+    .terms-card h3 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .terms-card p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">FasTrack</a>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tracking.html">Track</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<body>
+  <div class="hero">
+    <h1><i class="fas fa-file-contract"></i> Terms & Policies</h1>
+    <p>FastTrack is committed to transparency and your trust. Please review our key policies below.</p>
+  </div>
+
+  <div class="terms-container">
+    <div class="terms-card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>1. Terms of Service</h3>
+      <p>By using our services, you agree to follow all applicable laws and use FastTrack responsibly. We may suspend access if we detect abuse or misuse.</p>
+    </div>
+
+    <div class="terms-card">
+      <i class="fas fa-user-secret"></i>
+      <h3>2. Privacy Policy</h3>
+      <p>Your privacy matters. We only collect necessary delivery data, and never sell or misuse your personal information.</p>
+    </div>
+
+    <div class="terms-card">
+      <i class="fas fa-box"></i>
+      <h3>3. Shipping Policy</h3>
+      <p>Deliveries are dispatched within 24 hours. Timing varies by location. Ensure your delivery address is accurate to avoid delays.</p>
+    </div>
+
+    <div class="terms-card">
+      <i class="fas fa-undo-alt"></i>
+      <h3>4. Refunds & Cancellations</h3>
+      <p>You may cancel an order before it is dispatched. Refunds are processed for issues caused by our service. Contact us for help.</p>
+    </div>
+
+    <div class="terms-card">
+      <i class="fas fa-envelope"></i>
+      <h3>5. Contact Us</h3>
+      <p>Got questions about our policies? <a href="contact.html">Reach out here</a>. We're always happy to help.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 FastTrack Courier. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FastTrack Courier</title>
+  <link rel="stylesheet" href="style.css" /> <!-- ✅ Add this -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+  <style>
+    .hero {
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero form {
+      margin-top: 30px;
+    }
+
+    .hero input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      max-width: 90%;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      border: none;
+      background-color: #ffc107;
+      color: black;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .about {
+      padding: 60px 20px;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">FastTrack</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="tracking.html">Track</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>FastTrack Courier</h1>
+    <p>Your reliable parcel delivery partner across Ghana 🇬🇭</p>
+    <form onsubmit="handleTracking(event)">
+      <input type="text" id="trackingInput" placeholder="Enter Tracking Number" required />
+      <button type="submit">Track Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+  <div class="container">
+    <h2>Why Choose FastTrack?</h2>
+    <p class="mt-3">We offer fast, secure, and affordable courier services nationwide. From Accra to Tamale, Kumasi to Wa — we get your packages delivered safely and on time.</p>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Clients Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active text-center">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+               class="rounded-circle mb-3" alt="Client 1"
+               style="width: 100px; height: 100px; object-fit: cover;">
+          <blockquote class="blockquote">
+            <p>"Waves Shipping delivered my goods right on time! Highly recommend."</p>
+            <footer class="blockquote-footer">Aisha, Accra</footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
+               class="rounded-circle mb-3" alt="Client 2"
+               style="width: 100px; height: 100px; object-fit: cover;">
+          <blockquote class="blockquote">
+            <p>"Professional and smooth experience. Tracking was so easy!"</p>
+            <footer class="blockquote-footer">Kwame, Tamale</footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item text-center">
+          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+               class="rounded-circle mb-3" alt="Client 3"
+               style="width: 100px; height: 100px; object-fit: cover;">
+          <blockquote class="blockquote">
+            <p>"Best shipping company I’ve worked with. Very reliable!"</p>
+            <footer class="blockquote-footer">Fatima, Kumasi</footer>
+          </blockquote>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-outline-secondary btn-sm me-2" type="button"
+          data-bs-target="#testimonialCarousel" data-bs-slide="prev">‹ Prev</button>
+        <button class="btn btn-outline-secondary btn-sm" type="button"
+          data-bs-target="#testimonialCarousel" data-bs-slide="next">Next ›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-primary text-white pt-4 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Logo or Brand -->
+      <div class="col-md-4 mb-3">
+        <h5>FastTrack Courier</h5>
+        <p>Delivering your packages fast and safely across Ghana.</p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+   <div class="col-md-4 mb-3 text-center">
+  <h5>Quick Links</h5>
+  <ul class="list-unstyled d-inline-block text-start">
+    <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+    <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+    <li><a href="terms.html" class="text-white text-decoration-none">Terms & Policies</a></li>
+  </ul>
+</div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact</h5>
+        <p><i class="fas fa-phone-alt me-2"></i>+233 24 000 0000</p>
+        <p><i class="fas fa-envelope me-2"></i>support@fasttrack.com</p>
+        <p><i class="fas fa-map-marker-alt me-2"></i>Tamale, Ghana</p>
+      </div>
+    </div>
+
+    <hr class="border-light" />
+
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 FastTrack Courier. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
